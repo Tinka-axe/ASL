@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device=wdith, initialscale=1.0">
+    <title>COLLECTIONS</title>
+    <style>
+        *
+{
+margin: 0;
+padding: 0;
+box-sizing: 0border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background:white ;
+    color: black;
+    padding: 2rem;
+}
+/*grid container*/
+.colection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.card{
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background: white;
+}
+.card h2 {
+    font-size:1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.card .byline{
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1..5rem;
+    color: #333;
+}
+.card .btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+/*for the buttons*/
+.actions {
+    margin-top: 1rem;
+}
+    </style>
+</head>
+<body>
+    <main class="collections-grid">
+        <!--adiclub-->
+        <div class="card">
+            <h2>FREE SHIPPING WITH ADICLUB</h2>
+        </div>
+        <!--categories card-->
+        <div class="card">
+            <a href="#" class="btn">MEN</a>
+            <a href="#" class="btn">WOMEN</a>
+            <a href="#" class="btn">KIDS</a>
+            <a href="#" class="btn">SALES</a>
+            <a href="#" class="btn">PROMO</a>
+        </div>
+        <!--climacool-->
+        <div class="card">
+            <h2>CLIMACOOL</h2>
+            <P class="description">The future is now</p>
+            <a href="#" class="btn">SHOP NOW</a>
+            <a href="#" class="btn">SHOP SPORTSWEAR</a>
+        </div>
+        <!--jamaica part-->
+        <div class="card">
+            <h1>JERSEYS</h1>
+            <p class="description"> Shop relaxed cool jerseys for the carribean</p>
+            <h1>ADIZERO</h1>
+            <p class="description"> Introducing new exo shoes</p>
+            <h1>ADI 2.0</h1>
+            <p class="description"> Foot wear thats meant for you</p>
+            <h1>CLEATS</h1>
+            <p class="description"> High end boots</p>
+        </div>
+        <!--prime card-->
+        <div class="card">
+            <h2>PRIME</h2>
+            <p class="description">FAST FREE SHIPPING</p>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+        <!--buttons part-->
+        <div class="card">
+            <h2>POPULAR RIGHT NOW</h2>
+            <a href="#" class="btn">ultraboost</a>
+            <a href="#" class="btn">samba</a>
+            <a href="#" class="btn">gazelle</a>
+            <a href="#" class="btn">adizero</a>
+            <a href="#" class="btn">tiger</a>
+            <a href="#" class="btn">sasuno</a>
+        </div>
+        <!--last section-->
+        <div class="card">
+            <h2>SNEAKERS, SPORTS AND ACTIVE WEAR</h2>
+            <p class="description">Shop with us today let your feet say the rest</p>
+        </div>
+    </main>
+</body>

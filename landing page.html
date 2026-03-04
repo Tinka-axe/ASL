@@ -3,7 +3,71 @@
 <meta charset="UTF-8">
 <meta name = "viewport" content = "width=device=width, intial-scale=1.0"> <!--allows adjusting on devices-->
 <title> Collections</title>
-<link rel="stylesheet" href=""style.css> <!--links the css file for styling-->
+<!--<link rel="stylesheet" href=""style.css> <!-links the css file for styling-->
+<style>
+  *
+{
+margin: 0;
+padding: 0;
+box-sizing: 0border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background:white ;
+    color: black;
+    padding: 2rem;
+}
+/*grid container*/
+.colection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.card{
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background: white;
+}
+.card h2 {
+    font-size:1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.card .byline{
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+.card .btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+/*for the buttons*/
+.actions {
+    margin-top: 1rem;
+}  
+</style>
 </head>
 <body> <!--everything visible on the page-->
     <main class="Collecting-grid"> <!--main is what appears in the browser title-->
@@ -36,6 +100,7 @@
         </div>
         <!--LUXURY CARD-->
         <div class="card">
+            <h2>LUXURY</h2>
             <p class="description">accessories and other pieces</p>
         </div>
 
