@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width intialscale=1.0">
+    <title>OFFICIAL SITE</title>
+    <style>
+            *
+{
+margin: 0;
+padding: 0;
+box-sizing: 0border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background:white ;
+    color: black;
+    padding: 2rem;
+}
+/*grid container*/
+.COLLECTION-GRID{
+    display: flex;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: wrap;
+   /* white-space: nowrap;
+    overflow-x: auto;*/
+    justify-content: space-around;
+    gap: 20px; /*2 rem*/
+    /*max-width:1200px;*/
+    margin: 0 auto;
+    padding: 20px
+}
+
+.card{
+   /* border: 1px solid #ccc;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background: white;
+    flex: 1 1 250px;            /* flexible width, min 250px */
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+.card h3 {
+    font-size:1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.card .byline{
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1..5rem;
+    color: #333;
+}
+.card .btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+/*for the buttons*/
+.actions {
+    margin-top: 1rem;
+}
+
+    .banner {
+  flex: 1 1 100%;            /* span full width */
+  background: linear-gradient(to right, #000, #444); /* example dark gradient */
+  color: white;              /* text stands out */
+  text-align: center;
+  padding: 60px 20px;        /* more height */
+  font-size: 2rem;           /* larger text */
+  border-radius: 0;          /* remove rounded corners */
+  box-shadow: none;          /* remove card shadow */
+}
+
+.clothing{
+  display:flex;
+  flex-wrap:wrap;
+  flex: 1 1 100%; 
+   justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9
+
+}
+.Info{
+     display:flex;
+  flex-wrap:wrap;
+  flex: 1 1 100%; 
+   justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9
+}
+.Abcd{
+     display:flex;
+  flex-wrap:wrap;
+  flex: 1 1 100%; 
+   justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9
+}
+.front{
+     flex: 1 1 100%;            /* span full width */
+ /* background: linear-gradient(to right, #000, #444); /* example dark gradient */
+  color: white;              /* text stands out */
+  text-align: center;
+  padding: 60px 20px;        /* more height */
+  font-size: 2rem;           /* larger text */
+  border-radius: 0;          /* remove rounded corners */
+  box-shadow: none; 
+
+}
+    </style>
+</head>
+<body>
+    <main class="COLLECTION-GRID">
+        <!--heading-->
+        <div class="banner">
+            <h6>DOWNLOAD THE LORO-PIANA APP</h6>
+        </div>
+        <!--the moving image-->
+        <div class="front">
+            <img src="images.jpeg">
+            <p class="description">Exploring the power of color and fabric</p>
+            <a href="#" class="btn">WOMEN</a>
+            <a href="#" class="btn">MEN</a>
+        </div>
+        <section class="clothing">
+        <div class="card">
+        <h3>JACKET</h3>
+        <p class="description">Capture essence of style</p>
+        </div>
+        <div class="card">
+            <h3>VEST</h3>
+            <p class="description">Capture style</p>
+        </div>
+        <div class="card">
+            <h3>TROUSERS</h3>
+            <p class="description">Capure ease</p>
+        </div>
+        <div class="card">
+            <h3>SHOES</h3>
+            <p class="description">Capture motion</p>
+        </div>
+        </section>
+        <section class="clothing">
+            <div class="card">
+                <h3>JEWELLERY</h3>
+                <a href="#" class="lines">Discover</a>
+            </div>
+            <div class="card">
+                <h3>BAGS</h3>
+                <a href="#" class="lines">Discover</a>
+            </div>
+            <div class="card">
+                <h3>LOAFERS</h3>
+                <a href="#" class="lines">Discover</a>
+            </div>
+        </section>
+        <div class="card">
+            <section class="Abcd">
+                <div class="card">
+                    <img src="images.jpeg">
+                </div>
+                <div class="card">
+                    <h3>THE LOOK</h3>
+                    <img src="images.jpeg">
+                </div>
+                <div class="card">
+                    <img src="images.jpeg">
+                    <h3>Essentials</h3>
+                    <a href="#" class="lines">Women</a>
+                    <a href="#" class="lines" ><br>Men</a>
+                </div>
+                <div class="card">
+                    <img src="images.jpeg">
+                </div>
+            </section>
+        </div>
+        <div class="card">
+            <h3>The Monolgue of Piana</h3>
+            <p class="description">Experience flow</p>
+            <img src="images.jpeg">
+        </div>
+        <div class="card">
+            <h3>MORE</h3>
+            <section class="Info">
+                <div class="card">
+                    <img src="images.jpeg">
+                    <p class="description">Free Shipping</p>
+                    <a href="#" class="lines">Discover</a>
+                </div>
+                <div class="card">
+                    <img src="images.jpeg">
+                    <p class="description">Free Returns</p>
+                    <a href="#" class="lines">Discover</a>
+                </div>
+                <div class="card">
+                    <img src="images.jpeg">
+                    <p class="description">Book an appointment</p>
+                    <a href="#" class="lines">Discover</a>
+                </div>
+            </section>
+        </div>
+        <div class="card">
+            <h3>INSIDE LORO-PIANA</h3>
+            <section class="clothing">
+                <div class="card">
+                    <h3>COATS</h3>
+                    <p class="description">WARMTH</p>
+                </div>
+                <div class="card">
+                    <h3>FABRIC</h3>
+                    <p class="description">TEXTURE</p>
+                </div>
+                <div class="card">
+                    <h3>TAILORING</h3>
+                    <p class="description">STYLE</p>
+                </div>
+            </section>
+        </div>
+        <div class="card">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+        </div>
+    </main>
+</body>
