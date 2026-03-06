@@ -2,13 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device=wdith, initialscale=1.0">
-    <title>COLLECTIONS</title>
+    <title>APPARELL</title>
     <style>
         *
 {
 margin: 0;
 padding: 0;
-box-sizing: 0border-box;
+box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -19,18 +19,27 @@ body{
 }
 /*grid container*/
 .colection-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width:1200px;
+    display: flex;
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    justify-content: center;
+    gap: 20px; /*2 rem*/
+    /*max-width:1200px;*/
     margin: 0 auto;
+    padding: 20px
 }
 
 .card{
-    border: 1px solid #ccc;
+   /* border: 1px solid #ccc;
     padding: 1.5rem;
     border-radius: 4px;
     background: white;
+      flex: 1 1 250px;            /* flexible width, min 250px */
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .card h2 {
     font-size:1.8rem;
@@ -66,6 +75,15 @@ body{
 .actions {
     margin-top: 1rem;
 }
+.selections{
+  display:flex;
+  flex-wrap:wrap;
+   justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9
+
+}
     </style>
 </head>
 <body>
@@ -90,16 +108,26 @@ body{
             <a href="#" class="btn">SHOP SPORTSWEAR</a>
         </div>
         <!--jamaica part-->
+        <section  class ="selections">
         <div class="card">
             <h1>JERSEYS</h1>
             <p class="description"> Shop relaxed cool jerseys for the carribean</p>
+            </div>
+        <div class="card">
             <h1>ADIZERO</h1>
             <p class="description"> Introducing new exo shoes</p>
+        </div>
+
+        <div class="card">
             <h1>ADI 2.0</h1>
             <p class="description"> Foot wear thats meant for you</p>
+        </div>
+
+        <div class="card">
             <h1>CLEATS</h1>
             <p class="description"> High end boots</p>
         </div>
+            </section>
         <!--prime card-->
         <div class="card">
             <h2>PRIME</h2>
