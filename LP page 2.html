@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width intialscale=1.0">
+    <title>PAGE 2</title>
+    <style>
+        .dropbtn{
+           /* position:relative;
+            display:inline-block;*/
+            background-color: #3498db;
+            color:white;
+            padding:16px;
+            font-size:16px;
+            border:none;
+            cursor:pointer;
+            
+
+        }
+        .dropdown{
+            position:relative;
+            display:inline-block;
+        }
+        .dropdown-content{ /*this is the menu btw*/
+            display:none; /*hides the menu at first*/
+            position:absolute;
+            background-color: #f1f1f1;
+            min-width:160px;
+            box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index:1;
+        }
+        .dropdown-content a{/*shit appearing in the menu*/
+            color:black;
+            padding:12px 16px;
+            text-decoration:none;/*removes the intial blue link color*/
+            display:block; /*allows the link to take up the full width of the menu*/
+        }
+        .dropdown-content a:hover{
+            background-color: #ddd;/*what happens when you hover*/
+        }
+        .dropdown:hover .dropdown-content{/*showig the menu; the browser looks for this*/
+            display:block;
+        }
+        .dropdown:hover .dropbtn{
+            background-color: #2980b9;
+        }
+       
+    </style>
+</head>
+<html>
+    <body>
+<div class="dropdown">
+<btn class="dropbtn">CLICK ME</btn>
+<div class="dropdown-content">
+<a href="#">link 1</a>
+<a href="#">link 2</a>
+</div>
+</div>
+    </body>
+</html>
