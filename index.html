@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width intial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+        /* Container layout */
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+}
 
+/* Common button styles */
+.quantity-counter button {
+  background-color: #f8f9fa;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s ease;
+}
+
+.quantity-counter button:hover {
+  background-color: #e2e6ea;
+}
+
+/* The display/input field */
+.counter-display {
+  width: 50px;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  /* Removes the default arrows in Chrome/Safari/Firefox 
+  -moz-animation: textfield;*/
+}
+
+.counter-display::-webkit-outer-spin-button,
+.counter-display::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    </style>
+</head>
+<html>
+    <body>
+        <div class="quantity-container">
+            <button type="button" class="btn-minus" id="decrease">-</button>
+            <button type="button" class="btn-add" id="increase">+</button>
+            <input type="number" class="counter-display" id="counter" value="1" min="1" readonly>
+        </div>
+    </body>
+</html>
